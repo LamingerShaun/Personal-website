@@ -1,7 +1,7 @@
 @import "./base.css";
 
 .hero-image {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("../img/gear.jpg");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("../img/banner.jpg");
     height: 650px;
     background-position: center;
     background-repeat: no-repeat;
