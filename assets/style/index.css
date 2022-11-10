@@ -8,7 +8,15 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
 
+@keyframes fadein {
+    
 }
 
 .hero-text {
@@ -17,18 +25,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-}
-
-.hero-text button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    height: 40px;
-    width: 80px;
-    border-radius: 3px;
-    background-color: var(--app-blue);
-    text-decoration: none;
     color: #fff;
 }
 
@@ -136,9 +132,5 @@ h3 {
 
     .hero-text {
         font-size: 16px;
-    }
-
-    .hero-text button {
-        display: none;
     }
 }
