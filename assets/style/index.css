@@ -1,5 +1,180 @@
 @import "./reset.css";
 
+:root {
+    --app-blue: #5c72e2;
+    --app-pink: #e25c72;
+    --app-pink-2: #c0203b;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+header {
+    height: 56px;
+    background-color: var(--app-pink);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 30%;
+    height: 56px;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 56px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    width: 50%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li + li {
+    margin-left: 10px;
+}
+
+.search {
+    margin-top: 20px;
+    font-size: 0;
+}
+
+input[type=search] {
+    width: 180px;
+    line-height: 20px;
+    padding: 0 20px;
+    border: 1px var(--app-pink);
+    border-radius: 50px;
+    font-size: 12px;
+    background: rgb(255 255 255 / 0.5) url(../img/searchbar.png) no-repeat 2px 4px;
+    background-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    transition: border-color 0.25s ease-in-out;
+}
+
+input[type=search]:focus {
+    border: 1px solid var(--app-pink-2);
+}
+
+.container > .fa-solid, .fa-bars {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 350px;
+}
+
+section {
+    height: calc(100vh - 56px - 112px);
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 112px;
+    background-color: #fcfcfc;
+}
+
+.fa {
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: #fff;
+}
+
+.fa-youtube {  
+    background: #bb0000;  
+    color: #fff;  
+}  
+
+.fa-instagram {  
+    background: #ffc0cb;  
+    color: #fff;  
+}
+
+footer .copyright {
+    line-height: 56px;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #1a1a1a
+}
+
 /*---------------------------*/
-/*                           */
+/*        Media Queries      */
 /*---------------------------*/
+
+@media (max-width: 1980px) {
+    .icon {
+        display: none;
+    }
+}
+
+@media (max-width: 798px) {
+    .icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container > form {
+        display: none;
+    }
+}
