@@ -1,6 +1,7 @@
 @import "./reset.css";
 
 :root {
+    --app-box: #fcfcfc;
     --app-blue: #5c72e2;
     --app-pink: #e25c72;
     --app-pink-2: #c0203b;
@@ -98,7 +99,7 @@ input[type=search]:focus {
     border: 1px solid var(--app-pink-2);
 }
 
-.container > .fa-solid, .fa-bars {
+.container > .fa-solid, .fa-bars, .fa-x {
     color: #fff;
     margin-top: 20px;
     font-size: 20px;
