@@ -88,7 +88,7 @@ input[type=search] {
     border: 1px var(--app-pink);
     border-radius: 50px;
     font-size: 12px;
-    background: rgb(255 255 255 / 0.5) url(../img/searchbar.png) no-repeat 2px 4px;
+    background: rgb(255 255 255 / 0.5) url(../media/searchbar.png) no-repeat 2px 4px;
     background-size: 15px;
     font-weight: 600;
     text-align: left;
@@ -99,7 +99,7 @@ input[type=search]:focus {
     border: 1px solid var(--app-pink-2);
 }
 
-.container > .fa-solid, .fa-bars, .fa-x {
+.container > .fa-solid, .fa-bars {
     color: #fff;
     margin-top: 20px;
     font-size: 20px;
@@ -167,7 +167,7 @@ footer .copyright {
 }
 
 @media (max-width: 798px) {
-    .icon {
+    .fa-bars {
         display: block;
     }
 
